@@ -7,6 +7,7 @@ console.log('Basic()s __proto__ variable points to Function.prototype:= ' + (Bas
 
 console.log('Basic() has a prototype variable:=' + Basic.prototype);
 console.log('Basic()s prototype variable is an object whose __proto__ points to Object.prototype:=' + (Basic.prototype.__proto__ === Object.prototype));
+console.log('Basic()s prototype variable has a constructor property which points to the Basic function object itself:= ' + (Basic.prototype.constructor === Basic));
 
 console.log('Creating a new instance of Basic()');
 
